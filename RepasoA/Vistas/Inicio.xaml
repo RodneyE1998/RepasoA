@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepasoA.Vistas.Inicio"
+             Title="Inicio">
+    <VerticalStackLayout Spacing="15" Padding="15">
+        <Label 
+            Text="INICIO"
+            FontSize="20"
+            HorizontalTextAlignment="Center"/>
+        
+        <Image Source="https://images.credly.com/images/f21ec585-4011-4fe7-a3a6-5f4469ba924c/blob.png"
+               WidthRequest="100"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        
+
+        <Label Text="USUARIO"
+               FontSize="18"
+               Grid.Row="0"
+               Grid.Column="0"/>
+        <Entry  x:Name="txtUsuario"
+                Placeholder="Ingrese el usuario"
+                PlaceholderColor="Blue"
+                Grid.Row="0"
+                Grid.Column="1"/>
+
+        <Label Text="CONTRASEÑA"
+               FontSize="18"
+               Grid.Row="1"
+               Grid.Column="0"/>
+        <Entry x:Name="txtContrasena"
+               Placeholder="Ingrese la contraseña"
+               PlaceholderColor="Blue"
+               Grid.Row="1"
+               Grid.Column="1"
+               IsPassword="True"/>
+
+        </Grid>
+
+        <Button x:Name="btnIniciar"
+                Text="Iniciar Sesión"
+                Clicked="btnIniciar_Clicked_1"/>
+
+    </VerticalStackLayout>
+</ContentPage>
